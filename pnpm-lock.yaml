@@ -1,0 +1,41 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@sa-mp/node': ^0.2.0
+  '@tsconfig/node16': ^1.0.3
+  '@types/node': ^18.0.6
+  samp-node-lib: ^1.1.5
+  typescript: ^4.7.4
+
+dependencies:
+  '@sa-mp/node': 0.2.0
+  samp-node-lib: 1.1.5
+
+devDependencies:
+  '@tsconfig/node16': 1.0.3
+  '@types/node': 18.0.6
+  typescript: 4.7.4
+
+packages:
+
+  /@sa-mp/node/0.2.0:
+    resolution: {integrity: sha512-pNkx5cNJx786Smgrzultj7ei2IHP+ZiZGm9ER3+gnOOVM8s7b6LcKhFbL8JPf9b+VdhSOTDhqhYATmyMj3G5DQ==}
+    dev: false
+
+  /@tsconfig/node16/1.0.3:
+    resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@types/node/18.0.6:
+    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+    dev: true
+
+  /samp-node-lib/1.1.5:
+    resolution: {integrity: sha512-R7UVEl+NEhAwsD9INHX7po61DVFqvcQgcVHVZIav1xEpk3QLOx7f9wk0lMmfcy/nnZ8wgPsT2MGlfMhuHrfBXA==}
+    dev: false
+
+  /typescript/4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
