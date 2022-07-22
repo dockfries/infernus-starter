@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
-  "include": ["src/**/*.ts"],
+  "include": ["src/main.ts"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",

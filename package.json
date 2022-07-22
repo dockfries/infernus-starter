@@ -1,10 +1,11 @@
 {
-  "name": "rst-omp-server",
+  "name": "omp-server",
   "private": true,
   "version": "1.0.0",
-  "description": "race-speed-time game server",
+  "description": "",
   "scripts": {
-    "dev": "tsc && omp-server"
+    "dev": "tsc && omp-server",
+    "build": "tsc"
   },
   "keywords": [
     "sa-mp",
