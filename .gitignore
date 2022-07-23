@@ -1,10 +1,11 @@
-components
 .DS_Store
 .vscode
 node_modules
 dist
+components
 log.txt
-*.log
-*.dmp
 omp-server.exe
 libnode.dll
+*.log
+*.dmp
+*.pdb
