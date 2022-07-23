@@ -10,6 +10,11 @@ import CmdBus from "../utils/CmdBus";
 
 import Color from "../enums/color";
 
+// For the time being, I haven't thought of any way to load all commands automatically.
+import "../commands/help";
+import "../commands/login";
+import "../commands/race";
+
 class GameMode {
   private static instance: GameMode;
   private initialized: boolean = false;
@@ -59,7 +64,7 @@ class GameMode {
       if (!exist) {
         player.SendClientMessage(
           Color.white,
-          `The instruction ${cmdtext} you entered does not exist。`
+          `The instruction ${cmdtext} you entered does not exist.`
         );
       }
       return 1;
