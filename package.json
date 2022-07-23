@@ -21,10 +21,18 @@
     "samp-node-lib": "^1.1.5"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
     "@sa-mp/node": "^0.2.0",
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.0.6",
+    "cross-env": "^7.0.3",
     "rollup": "^2.77.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   }
 }
