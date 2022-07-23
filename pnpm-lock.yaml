@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rollup/plugin-alias': ^3.1.9
   '@rollup/plugin-commonjs': ^22.0.1
   '@rollup/plugin-json': ^4.1.0
   '@rollup/plugin-node-resolve': ^13.3.0
@@ -20,7 +19,6 @@ dependencies:
   samp-node-lib: 1.1.5
 
 devDependencies:
-  '@rollup/plugin-alias': 3.1.9_rollup@2.77.0
   '@rollup/plugin-commonjs': 22.0.1_rollup@2.77.0
   '@rollup/plugin-json': 4.1.0_rollup@2.77.0
   '@rollup/plugin-node-resolve': 13.3.0_rollup@2.77.0
@@ -92,16 +90,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: true
-
-  /@rollup/plugin-alias/3.1.9_rollup@2.77.0:
-    resolution: {integrity: sha512-QI5fsEvm9bDzt32k39wpOwZhVzRcL5ydcffUHMyLVaVaLeC70I8TJZ17F1z1eMoLu4E/UOcH9BWVkKpIKdrfiw==}
-    engines: {node: '>=8.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    dependencies:
-      rollup: 2.77.0
-      slash: 3.0.0
     dev: true
 
   /@rollup/plugin-commonjs/22.0.1_rollup@2.77.0:
@@ -489,11 +477,6 @@ packages:
 
   /shebang-regex/3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
-    engines: {node: '>=8'}
-    dev: true
-
-  /slash/3.0.0:
-    resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
     dev: true
 

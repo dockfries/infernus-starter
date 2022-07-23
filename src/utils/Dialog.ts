@@ -1,5 +1,5 @@
 import { DIALOG_STYLE, SampPlayer } from "samp-node-lib";
-import Color from "../enums/color";
+import Color from "@/enums/color";
 
 interface DialogImpl {
   style: DIALOG_STYLE;

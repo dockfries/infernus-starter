@@ -3,6 +3,8 @@
   "include": ["src/main.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": { "@/*": ["src/*"] },
     "target": "esnext",
     "module": "esnext",
     "outDir": "dist",

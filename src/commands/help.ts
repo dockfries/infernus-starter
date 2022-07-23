@@ -1,5 +1,5 @@
-import CmdBus from "../utils/CmdBus";
-import Dialog from "../utils/Dialog";
+import CmdBus from "@/utils/CmdBus";
+import Dialog from "@/utils/Dialog";
 import { DIALOG_STYLE } from "samp-node-lib";
 
 const helpDialog = new Dialog({
