@@ -4,23 +4,25 @@ specifiers:
   '@sa-mp/node': ^0.2.0
   '@tsconfig/node16': ^1.0.3
   '@types/node': ^18.0.6
+  rollup: ^2.77.0
   samp-node-lib: ^1.1.5
   typescript: ^4.7.4
 
 dependencies:
-  '@sa-mp/node': 0.2.0
   samp-node-lib: 1.1.5
 
 devDependencies:
+  '@sa-mp/node': 0.2.0
   '@tsconfig/node16': 1.0.3
   '@types/node': 18.0.6
+  rollup: 2.77.0
   typescript: 4.7.4
 
 packages:
 
   /@sa-mp/node/0.2.0:
     resolution: {integrity: sha512-pNkx5cNJx786Smgrzultj7ei2IHP+ZiZGm9ER3+gnOOVM8s7b6LcKhFbL8JPf9b+VdhSOTDhqhYATmyMj3G5DQ==}
-    dev: false
+    dev: true
 
   /@tsconfig/node16/1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
@@ -28,6 +30,22 @@ packages:
 
   /@types/node/18.0.6:
     resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
+    dev: true
+
+  /fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /rollup/2.77.0:
+    resolution: {integrity: sha512-vL8xjY4yOQEw79DvyXLijhnhh+R/O9zpF/LEgkCebZFtb6ELeN9H3/2T0r8+mp+fFTBHZ5qGpOpW2ela2zRt3g==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /samp-node-lib/1.1.5:

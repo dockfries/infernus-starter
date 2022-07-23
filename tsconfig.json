@@ -4,9 +4,8 @@
   "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "outDir": "dist",
-    "sourceMap": true,
     "types": ["@sa-mp/node", "@types/node"],
     "esModuleInterop": true,
     "strict": true,
