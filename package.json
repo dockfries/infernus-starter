@@ -5,7 +5,8 @@
   "description": "",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev rollup -c -w",
-    "build": "cross-env NODE_ENV=prod rollup -c"
+    "build": "cross-env NODE_ENV=prod rollup -c",
+    "lint": "eslint src/* --fix -c .eslintrc"
   },
   "keywords": [
     "sa-mp",
@@ -28,7 +29,10 @@
     "@sa-mp/node": "^0.2.0",
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
     "cross-env": "^7.0.3",
+    "eslint": "^8.20.0",
     "rollup": "^2.77.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-terser": "^7.0.2",
