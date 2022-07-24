@@ -1,7 +1,6 @@
 import typescript from "@rollup/plugin-typescript";
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
-import del from "rollup-plugin-delete";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 
@@ -14,11 +13,7 @@ const plugins = [
   nodeResolve(),
 ];
 
-if (isDev) {
-  plugins.push(terser(), del({ targets: "dist/*", runOnce: true }));
-} else {
-  plugins.push(terser(), del({ targets: "dist/*" }));
-}
+if (!isDev) plugins.push(terser());
 
 export default {
   input: "./src/main.ts",
@@ -27,6 +22,6 @@ export default {
     format: "cjs",
     sourcemap: isDev,
   },
-  external: ["samp-node-lib"],
   plugins,
+  external: ["samp-node-lib"],
 };

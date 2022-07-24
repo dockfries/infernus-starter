@@ -4,15 +4,14 @@ A very simple [omp server](https://github.com/openmultiplayer/server-beta) that 
 
 ## Usage
 
-The necessary files were removed to ensure that the latest version and repository filesize are always used.
+> **The necessary files were removed** to ensure that the latest version and repository filesize are always used.
 
-1. download the latest [omp server](https://github.com/openmultiplayer/server-beta/releases) and extract it to the root directory, i.e. `omp-server.exe` and `components` folder
+1. download [omp server](https://github.com/openmultiplayer/server-beta/releases) and extract it to the root directory, i.e. `omp-server.exe` and `components` folder
 
-2. download the latest [samp-node](https://github.com/AmyrAhmady/samp-node/releases), put `libnode.dll` into the root folder and replace `samp-node.dll` with plugins
+2. download [samp-node](https://github.com/AmyrAhmady/samp-node/releases), put `libnode.dll` into the root folder and replace `samp-node.dll` with plugins.
 
 3. `pnpm install` (install dependencies)
-4. `pnpm dev` (start listening compile)
-5. manually start `omp-server.exe`
+4. `pnpm dev` (start listening compile and auto-restart server)
 
 ## Advantages
 
@@ -29,3 +28,4 @@ If you look at the `samp-node-lib` code, you will see that the underlying calls 
 ## Notice
 
 - `samp-node` requires compliance with the `cjs` specification and has been converted from `esm` to `cjs` via `rollup`.
+- dist folder is now cleared before execution so that the first run will report an error and **the service will run normally on the second restart**. since `rollup` and `nodemon` run at the same time, the server will automatically restart after `rollup` is compiled, so running dev will start the server twice.
