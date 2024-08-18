@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@infernus/core": "^0.11.0-beta.11",
+    "@infernus/raknet": "^0.11.1",
     "pino": "^8.18.0",
     "pino-pretty": "^10.3.1"
   },
