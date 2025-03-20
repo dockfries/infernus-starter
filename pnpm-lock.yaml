@@ -24,12 +24,12 @@ importers:
       '@eslint/js':
         specifier: ^9.22.0
         version: 9.22.0
+      '@infernus/types':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@rslib/core':
         specifier: ^0.5.4
         version: 0.5.4(typescript@5.8.2)
-      '@sa-mp/node':
-        specifier: ^0.2.0
-        version: 0.2.0
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
@@ -186,6 +186,9 @@ packages:
   '@infernus/streamer@0.11.2':
     resolution: {integrity: sha512-4PtR6cGZgtNhziC8P/ykkr/HOIPgo6WbNchHRwDJ4tPpsuJx1LAbKO3S0sRYtadQiddfrMGjvwrxY9HzIx2nxw==}
 
+  '@infernus/types@0.1.0':
+    resolution: {integrity: sha512-+TTq9TTGrZJZfln0bEhEKaO6ZZxk23deP+LxIT3822eMa6l1U1rNUApxBC95cICbz8hDqzQRYTv6/sX2mgCLPg==}
+
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
@@ -297,9 +300,6 @@ packages:
   '@rspack/lite-tapable@1.0.1':
     resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
     engines: {node: '>=16.0.0'}
-
-  '@sa-mp/node@0.2.0':
-    resolution: {integrity: sha512-pNkx5cNJx786Smgrzultj7ei2IHP+ZiZGm9ER3+gnOOVM8s7b6LcKhFbL8JPf9b+VdhSOTDhqhYATmyMj3G5DQ==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -1374,6 +1374,8 @@ snapshots:
 
   '@infernus/streamer@0.11.2': {}
 
+  '@infernus/types@0.1.0': {}
+
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@module-federation/error-codes@0.8.4': {}
@@ -1478,8 +1480,6 @@ snapshots:
       '@swc/helpers': 0.5.15
 
   '@rspack/lite-tapable@1.0.1': {}
-
-  '@sa-mp/node@0.2.0': {}
 
   '@swc/helpers@0.5.15':
     dependencies:

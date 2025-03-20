@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@infernus/types": "^0.1.0",
     "@rslib/core": "^0.5.4",
-    "@sa-mp/node": "^0.2.0",
     "@types/node": "^22.13.10",
     "cross-env": "^7.0.3",
     "eslint": "^9.22.0",
