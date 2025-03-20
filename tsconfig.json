@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": ["@sa-mp/node", "@types/node"]
+    "types": ["@infernus/types", "@types/node"]
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*.ts"]
