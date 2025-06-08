@@ -27,7 +27,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@infernus/core": "^0.11.12",
+    "@infernus/core": "^0.11.13",
     "pino": "^9.7.0",
     "pino-pretty": "^13.0.0",
     "pino-roll": "^3.1.0"
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@eslint/js": "^9.28.0",
     "@infernus/types": "^0.1.0",
-    "@rslib/core": "^0.5.5",
+    "@rslib/core": "^0.9.2",
     "@types/node": "^22.15.30",
     "cross-env": "^7.0.3",
     "eslint": "^9.28.0",
