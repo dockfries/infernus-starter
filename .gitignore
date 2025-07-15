@@ -3,8 +3,8 @@ node_modules
 dist
 components
 log.txt
-omp-server.exe
-libnode.dll
+*.exe
+*.dll
 logs
 *.log
 *.dmp
@@ -13,3 +13,4 @@ plugins
 qawno
 include
 .rslib
+*.so
