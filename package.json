@@ -34,17 +34,18 @@
     "pino-roll": "^3.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.31.0",
     "@infernus/types": "^0.1.0",
-    "@rslib/core": "^0.9.2",
-    "@types/node": "^22.15.30",
+    "@rslib/core": "^0.10.5",
+    "@types/node": "^22.16.4",
     "cross-env": "^7.0.3",
-    "eslint": "^9.28.0",
-    "globals": "^16.2.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
     "husky": "^9.1.7",
+    "node-gyp": "^11.2.0",
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "^8.37.0"
   }
 }
