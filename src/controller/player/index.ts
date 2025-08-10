@@ -8,15 +8,15 @@ PlayerEvent.onConnect(async ({ player, next }) => {
   await chooseLanguage(player);
   player.sendClientMessage(
     ColorEnum.PrimaryBlue,
-    $t("player.hello", [player.getName()], player.locale)
+    $t("player.hello", [player.getName().name], player.locale)
   );
   player.sendClientMessage(
     ColorEnum.Warn,
-    $t("player.version", [player.getVersion()], player.locale)
+    $t("player.version", [player.getVersion().version], player.locale)
   );
   player.sendClientMessage(
     ColorEnum.White,
-    $t("player.ip", [player.getIp()], player.locale)
+    $t("player.ip", [player.getIp().ip], player.locale)
   );
   player.sendClientMessage(
     ColorEnum.White,
@@ -38,7 +38,7 @@ PlayerEvent.onDisconnect(({ player, reason, next }) => {
   Player.getInstances().forEach((p) => {
     p.sendClientMessage(
       ColorEnum.White,
-      $t("player.disconnect", [player.getName(), reason], player.locale)
+      $t("player.disconnect", [player.getName().name, reason], player.locale)
     );
   });
   return next();
@@ -58,7 +58,7 @@ PlayerEvent.onKeyStateChange(({ player, newKeys, oldKeys, next }) => {
     ColorEnum.White,
     $t(
       "player.keyStateChange",
-      [player.getName(), Date.now(), newKeys, oldKeys],
+      [player.getName().name, Date.now(), newKeys, oldKeys],
       player.locale
     )
   );
@@ -66,12 +66,12 @@ PlayerEvent.onKeyStateChange(({ player, newKeys, oldKeys, next }) => {
 });
 
 PlayerEvent.onPause(({ player, pausedAt, next }) => {
-  logger.info($t("player.pause", [player.getName(), pausedAt], player.locale));
+  logger.info($t("player.pause", [player.getName().name, pausedAt], player.locale));
   return next();
 });
 
 PlayerEvent.onResume(({ player, diff, next }) => {
-  const msg = $t("player.resume", [player.getName(), diff], player.locale);
+  const msg = $t("player.resume", [player.getName().name, diff], player.locale);
   logger.info(msg);
   player.sendClientMessage(ColorEnum.White, msg);
   return next();
