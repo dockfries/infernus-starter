@@ -18,26 +18,24 @@
   "license": "MIT",
   "author": "dockfries",
   "scripts": {
-    "serve": "pnpm exec ./omp-server",
-    "dev": "npm-run-all -p -r -l dev:server dev:watch",
-    "dev:watch": "cross-env NODE_ENV=development rslib build -w",
-    "dev:server": "nodemon -x \"pnpm serve\" -I -w dist/bundle.js",
+    "serve": "cross-env NODE_ENV=production pnpm exec ./omp-server",
+    "dev": "cross-env NODE_ENV=development npm-run-all -p -r -l dev:server dev:watch",
+    "dev:watch": "rslib build -w",
+    "dev:server": "nodemon -x \"pnpm exec ./omp-server\" -I -w dist/bundle.js",
     "build": "cross-env NODE_ENV=production rslib build",
     "lint": "eslint --fix",
     "prepare": "husky"
   },
   "dependencies": {
-    "@infernus/core": "^0.12.3",
+    "@infernus/core": "^0.12.4",
     "@infernus/raknet": "^0.12.2",
-    "pino": "^9.13.1",
-    "pino-pretty": "^13.1.2",
-    "pino-roll": "^4.0.0"
+    "winston": "^3.18.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
     "@infernus/types": "^0.1.0",
     "@rslib/core": "^0.15.0",
-    "@types/node": "^22.18.9",
+    "@types/node": "^22.18.10",
     "cross-env": "^10.1.0",
     "eslint": "^9.37.0",
     "globals": "^16.4.0",
