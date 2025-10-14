@@ -6,12 +6,10 @@ export default defineConfig({
   lib: [
     {
       source: {
-        preEntry: "./src/polyfill.js",
         entry: {
           bundle: "./src/main.ts",
         },
       },
-      format: "cjs",
     },
   ],
   output: {
