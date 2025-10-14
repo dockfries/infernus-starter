@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "author": "dockfries",
+  "type": "module",
   "scripts": {
     "serve": "cross-env NODE_ENV=production pnpm exec ./omp-server",
     "dev": "cross-env NODE_ENV=development npm-run-all -p -r -l dev:server dev:watch",
