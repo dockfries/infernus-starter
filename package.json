@@ -1,0 +1,60 @@
+{
+  "name": "omp-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A very simple omp server template that uses the samp-node plugin and the @infernus/core library.",
+  "keywords": [
+    "sa-mp",
+    "sa:mp",
+    "open.mp",
+    "omp",
+    "gamemode",
+    "samp-node"
+  ],
+  "homepage": "https://github.com/dockfries/infernus-starter#readme",
+  "bugs": {
+    "url": "https://github.com/dockfries/infernus-starter/issues"
+  },
+  "license": "MIT",
+  "author": "dockfries",
+  "type": "module",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=production pnpm exec ./omp-server",
+    "dev": "cross-env NODE_ENV=development run-p -r dev:server dev:watch",
+    "dev:watch": "vite build -m development",
+    "dev:server": "nodemon -x \"pnpm exec ./omp-server\" -I",
+    "build": "cross-env NODE_ENV=production vite build",
+    "format": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@infernus/core": "^0.14.7",
+    "@infernus/raknet": "^0.14.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@infernus/types": "^0.1.1",
+    "@types/node": "^26.1.2",
+    "cross-env": "^10.1.0",
+    "globals": "^17.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "node-gyp": "^13.0.1",
+    "nodemon": "^3.1.14",
+    "npm-run-all2": "^9.0.3",
+    "oxfmt": "^0.61.0",
+    "oxlint": "^1.76.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "typescript": "^6.0.3",
+    "vite": "^8.2.0"
+  },
+  "lint-staged": {
+    "*.{ts,js}": "pnpm run lint",
+    "*.{ts,js,json,yml}": "pnpm run format"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

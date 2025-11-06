@@ -1,0 +1,20 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "openmultiplayer/open.mp": {
+      "version": "v1.5.8.3079"
+    },
+    "dockfries/samp-node": {
+      "version": "2.6.1",
+      "component": false
+    },
+    "dockfries/Pawn.RakNet": {
+      "version": "1.7.0-omp",
+      "component": true
+    },
+    "dockfries/samp-streamer-plugin": {
+      "version": "v2.9.6",
+      "component": false
+    }
+  }
+}
