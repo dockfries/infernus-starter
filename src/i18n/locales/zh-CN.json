@@ -1,0 +1,42 @@
+{
+  "server": {
+    "running": "成功运行由 node.js 强力驱动的 omp 服务器",
+    "exit": "游戏模式 退出",
+    "incoming": "传入连接: %s - %s : %s",
+    "rcon": {
+      "command": "远程控制台: 使用了命令 %s",
+      "attempt": "远程控制台: 登录尝试 - %s %s %s"
+    }
+  },
+  "command": {
+    "next": "你输入的下一个参数是 %s",
+    "official": {
+      "yes": "服务器: 你正在使用官方客户端",
+      "no": "服务器: 你使用的是非官方客户端"
+    },
+    "reg": "服务器: 这是一个注册案例 %s",
+    "login": "服务器: 这是一个登录案例 %s",
+    "error": "服务器: 无效的命令 %s, 错误码: %s, 信息: %s"
+  },
+  "dialog": {
+    "help": {
+      "caption": "帮助",
+      "info": "你可以使用以下命令：xxx",
+      "button1": "关闭"
+    },
+    "lang": {
+      "change": "您将语言更换为 %s，可以通过 /language 再次修改语言。"
+    }
+  },
+  "player": {
+    "hello": "服务器: 你好 %s",
+    "version": "服务器: 你的版本是 %s",
+    "ip": "服务器: 你的ip是 %s",
+    "ping": "服务器: 你的ping值 %s",
+    "rawIp": "服务器: 你的网络字节序是 %s",
+    "disconnect": "服务器: 玩家 %s 与服务器断开连接，因为: %s",
+    "keyStateChange": "%s 按键状态改变 %s %s - %s",
+    "pause": "%s 暂停了游戏 %s",
+    "resume": "%s 暂停了 %s 毫秒"
+  }
+}

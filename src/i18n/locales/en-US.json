@@ -1,0 +1,42 @@
+{
+  "server": {
+    "running": "Successfully running an omp server powered by node.js",
+    "exit": "GameMode exit",
+    "incoming": "Incoming connection: %s - %s : %s",
+    "rcon": {
+      "command": "rcon: use command %s",
+      "attempt": "rcon: login attempt - %s %s %s"
+    }
+  },
+  "command": {
+    "next": "The next parameter that you enter is %s",
+    "official": {
+      "yes": "Server: You are using the official client",
+      "no": "Server: You are using an unofficial client"
+    },
+    "reg": "Server: this is a reg example %s",
+    "login": "Server: this is a login example %s",
+    "error": "Server: error command %s, code: %s, err: %s"
+  },
+  "dialog": {
+    "help": {
+      "caption": "Help",
+      "info": "You can use the following commands: foo",
+      "button1": "Close"
+    },
+    "lang": {
+      "change": "You are using %s, and you can modify the language again through /language."
+    }
+  },
+  "player": {
+    "hello": "Server: hello %s",
+    "version": "Server: your version %s",
+    "ip": "Server: your ip %s",
+    "ping": "Server: your ping %s",
+    "rawIp": "Server: your raw ip %s",
+    "disconnect": "Server: player %s disconnect because reason: %s",
+    "keyStateChange": "%s key state change %s %s - %s",
+    "pause": "%s pause game %s",
+    "resume": "%s paused for %s milliseconds"
+  }
+}
