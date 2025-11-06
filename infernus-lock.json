@@ -1,0 +1,16 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "openmultiplayer/open.mp": {
+      "version": "v1.4.0.2779"
+    },
+    "dockfries/samp-node": {
+      "version": "2.6.1",
+      "component": false
+    },
+    "samp-incognito/samp-streamer-plugin": {
+      "version": "v2.9.6",
+      "component": false
+    }
+  }
+}
