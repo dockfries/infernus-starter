@@ -16,6 +16,7 @@ export default defineConfig({
     },
   ],
   output: {
+    cleanDistPath: !isDev,
     target: "node",
     sourceMap: isDev,
     minify: !isDev,
