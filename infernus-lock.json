@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "dependencies": {
     "openmultiplayer/open.mp": {
-      "version": "v1.4.0.2779"
+      "version": "v1.5.8.3079"
     },
     "dockfries/samp-node": {
       "version": "2.6.1",
