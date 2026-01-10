@@ -7,16 +7,16 @@ PlayerEvent.onCommandText(
   ({ player, subcommand, next }) => {
     player.sendClientMessage(
       ColorEnum.White,
-      $t("command.reg", [subcommand], player.locale)
+      $t("command.reg", [subcommand], player.locale),
     );
     return next();
-  }
+  },
 );
 
 PlayerEvent.onCommandText(["l", "login"], ({ player, subcommand, next }) => {
   player.sendClientMessage(
     ColorEnum.White,
-    $t("command.login", [subcommand], player.locale)
+    $t("command.login", [subcommand], player.locale),
   );
   return next();
 });

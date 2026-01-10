@@ -7,7 +7,7 @@ PlayerEvent.onCommandText("race", ({ player, subcommand, next }) => {
   if (subcommand[0] === "s") {
     player.sendClientMessage(
       ColorEnum.White,
-      $t("command.next", [subcommand.toString()], player.locale)
+      $t("command.next", [subcommand.toString()], player.locale),
     );
     return next();
   }
