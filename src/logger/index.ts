@@ -7,7 +7,7 @@ export const logger = winston.createLogger({
       format: "YYYY-MM-DD HH:mm:ss",
     }),
     winston.format.errors({ stack: true }),
-    winston.format.json()
+    winston.format.json(),
   ),
   transports: [
     new winston.transports.File({
@@ -30,9 +30,9 @@ if (process.env.NODE_ENV !== "production") {
         winston.format.printf(({ timestamp, level, message, stack }) => {
           const text = `[${timestamp}] ${level}: ${message}`;
           return stack ? text + "\n" + stack : text;
-        })
+        }),
       ),
-    })
+    }),
   );
 }
 

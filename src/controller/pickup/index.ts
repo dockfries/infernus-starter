@@ -16,7 +16,7 @@ DynamicPickupEvent.onPlayerPickUp(({ player, pickup }) => {
   if (pickup.id === cone.id) {
     player.sendClientMessage(
       ColorEnum.WhiteNumber,
-      `You touched a cone, id: ${pickup.id}`
+      `You touched a cone, id: ${pickup.id}`,
     );
   }
   return true;

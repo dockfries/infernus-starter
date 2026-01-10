@@ -8,23 +8,23 @@ PlayerEvent.onConnect(async ({ player, next }) => {
   await chooseLanguage(player);
   player.sendClientMessage(
     ColorEnum.PrimaryBlue,
-    $t("player.hello", [player.getName().name], player.locale)
+    $t("player.hello", [player.getName().name], player.locale),
   );
   player.sendClientMessage(
     ColorEnum.Warn,
-    $t("player.version", [player.getVersion().version], player.locale)
+    $t("player.version", [player.getVersion().version], player.locale),
   );
   player.sendClientMessage(
     ColorEnum.White,
-    $t("player.ip", [player.getIp().ip], player.locale)
+    $t("player.ip", [player.getIp().ip], player.locale),
   );
   player.sendClientMessage(
     ColorEnum.White,
-    $t("player.ping", [player.getPing()], player.locale)
+    $t("player.ping", [player.getPing()], player.locale),
   );
   player.sendClientMessage(
     ColorEnum.White,
-    $t("player.rawIp", [player.getRawIp()], player.locale)
+    $t("player.rawIp", [player.getRawIp()], player.locale),
   );
   return next();
 });
@@ -38,7 +38,7 @@ PlayerEvent.onDisconnect(({ player, reason, next }) => {
   Player.getInstances().forEach((p) => {
     p.sendClientMessage(
       ColorEnum.White,
-      $t("player.disconnect", [player.getName().name, reason], player.locale)
+      $t("player.disconnect", [player.getName().name, reason], player.locale),
     );
   });
   return next();
@@ -47,7 +47,7 @@ PlayerEvent.onDisconnect(({ player, reason, next }) => {
 PlayerEvent.onCommandError(({ player, command, error, next }) => {
   player.sendClientMessage(
     ColorEnum.Danger,
-    $t("command.error", [command, error.code, error.msg], player.locale)
+    $t("command.error", [command, error.code, error.msg], player.locale),
   );
   next();
   return true;
@@ -59,14 +59,16 @@ PlayerEvent.onKeyStateChange(({ player, newKeys, oldKeys, next }) => {
     $t(
       "player.keyStateChange",
       [player.getName().name, Date.now(), newKeys, oldKeys],
-      player.locale
-    )
+      player.locale,
+    ),
   );
   return next();
 });
 
 PlayerEvent.onPause(({ player, pausedAt, next }) => {
-  logger.info($t("player.pause", [player.getName().name, pausedAt], player.locale));
+  logger.info(
+    $t("player.pause", [player.getName().name, pausedAt], player.locale),
+  );
   return next();
 });
 

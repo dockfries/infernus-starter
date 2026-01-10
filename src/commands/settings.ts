@@ -15,8 +15,8 @@ PlayerEvent.onCommandText("isOfficial", ({ player, next }) => {
     $t(
       isOfficial ? "command.official.yes" : "command.official.no",
       null,
-      player.locale
-    )
+      player.locale,
+    ),
   );
   return next();
 });
