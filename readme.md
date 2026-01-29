@@ -4,6 +4,18 @@ A very simple [omp server](https://github.com/openmultiplayer/open.mp/releases) 
 
 [📚 **Documentation**](https://dockfries.github.io/infernus/quick-start.html)
 
+## Get Started
+
+```sh
+pnpm dlx @infernus/create-app@latest install
+
+pnpm install --dev # ensure node-gyp install first for future maybe better-sqlite3?
+
+pnpm install
+pnpm build
+pnpm serve
+```
+
 ## Notice
 
 - [Why does crash the first time you run it?](https://github.com/dockfries/infernus-starter/issues/12)
