@@ -29,7 +29,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@infernus/core": "^0.14.3",
+    "@infernus/core": "^0.14.4",
     "winston": "^3.19.0"
   },
   "devDependencies": {

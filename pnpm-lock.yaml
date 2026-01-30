@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@infernus/core':
-        specifier: ^0.14.3
-        version: 0.14.3
+        specifier: ^0.14.4
+        version: 0.14.4
       winston:
         specifier: ^3.19.0
         version: 3.19.0
@@ -163,8 +163,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@infernus/core@0.14.3':
-    resolution: {integrity: sha512-XCaPmtqYjJ+GillF8O7rEsYDlC5rrZOxc3XgrtqPnNryIbn2YDM6Wec4qkMHIYclRPIC61rjqAa+JZgVKyA5Ag==}
+  '@infernus/core@0.14.4':
+    resolution: {integrity: sha512-IomIxDDA7PmcfH+9FdWtnVht2HqmxP8vlSylRI8/08JkbRbsR9jH+HqPrLrweMdTMGtKgKqXI7tufiCoVslAMw==}
 
   '@infernus/types@0.1.0':
     resolution: {integrity: sha512-+TTq9TTGrZJZfln0bEhEKaO6ZZxk23deP+LxIT3822eMa6l1U1rNUApxBC95cICbz8hDqzQRYTv6/sX2mgCLPg==}
@@ -1791,7 +1791,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@infernus/core@0.14.3':
+  '@infernus/core@0.14.4':
     dependencies:
       iconv-lite: 0.7.2
 
