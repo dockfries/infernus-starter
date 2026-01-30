@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@infernus/core':
-        specifier: ^0.14.3
-        version: 0.14.3
+        specifier: ^0.14.4
+        version: 0.14.4
       '@infernus/raknet':
         specifier: ^0.13.2
-        version: 0.13.2(@infernus/core@0.14.3)
+        version: 0.13.2(@infernus/core@0.14.4)
       winston:
         specifier: ^3.19.0
         version: 3.19.0
@@ -162,8 +162,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@infernus/core@0.14.3':
-    resolution: {integrity: sha512-XCaPmtqYjJ+GillF8O7rEsYDlC5rrZOxc3XgrtqPnNryIbn2YDM6Wec4qkMHIYclRPIC61rjqAa+JZgVKyA5Ag==}
+  '@infernus/core@0.14.4':
+    resolution: {integrity: sha512-IomIxDDA7PmcfH+9FdWtnVht2HqmxP8vlSylRI8/08JkbRbsR9jH+HqPrLrweMdTMGtKgKqXI7tufiCoVslAMw==}
 
   '@infernus/raknet@0.13.2':
     resolution: {integrity: sha512-p118j0GamdiItcABJNwEqx6NRHZiBNmOoabOUQ6UsPTqOvOBFyDcW2+uNzkwRUVB7E9Pvpy0hKj8PyOnjX73GQ==}
@@ -1962,13 +1962,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@infernus/core@0.14.3':
+  '@infernus/core@0.14.4':
     dependencies:
       iconv-lite: 0.7.2
 
-  '@infernus/raknet@0.13.2(@infernus/core@0.14.3)':
+  '@infernus/raknet@0.13.2(@infernus/core@0.14.4)':
     dependencies:
-      '@infernus/core': 0.14.3
+      '@infernus/core': 0.14.4
 
   '@infernus/types@0.1.0': {}
 
