@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "outDir": "dist",
+    "rootDir": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "types": ["@infernus/types", "@types/node"]
+    "types": ["node", "@infernus/types"]
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*.ts"]
