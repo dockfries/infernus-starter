@@ -12,11 +12,7 @@ PlayerEvent.onCommandText("isOfficial", ({ player, next }) => {
   const isOfficial = player.isUsingOfficialClient();
   player.sendClientMessage(
     ColorEnum.White,
-    $t(
-      isOfficial ? "command.official.yes" : "command.official.no",
-      null,
-      player.locale,
-    ),
+    $t(isOfficial ? "command.official.yes" : "command.official.no", null, player.locale),
   );
   return next();
 });

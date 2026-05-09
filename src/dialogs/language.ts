@@ -6,12 +6,9 @@ import { Dialog, DialogStylesEnum, Player } from "@infernus/core";
 export const chooseLanguage = async (p: Player) => {
   const currLocale = p.locale as LanguageEnum;
 
-  const info = Object.values(localesTitle).reduce(
-    (prev, curr, idx: number): string => {
-      return `${prev}${idx + 1}.${curr[currLocale]}\n`;
-    },
-    "",
-  );
+  const info = Object.values(localesTitle).reduce((prev, curr, idx: number): string => {
+    return `${prev}${idx + 1}.${curr[currLocale]}\n`;
+  }, "");
 
   const { listItem: localeIdx } = await new Dialog({
     style: DialogStylesEnum.LIST,
@@ -25,12 +22,9 @@ export const chooseLanguage = async (p: Player) => {
   const { listItem: charsetIdx } = await new Dialog({
     style: DialogStylesEnum.LIST,
     caption: "Please select your system's charset",
-    info: charsets.reduce(
-      (prev: string, curr: CharsetEnum, idx: number): string => {
-        return `${prev}${idx + 1}.${curr}\n`;
-      },
-      "",
-    ),
+    info: charsets.reduce((prev: string, curr: CharsetEnum, idx: number): string => {
+      return `${prev}${idx + 1}.${curr}\n`;
+    }, ""),
     button1: "ok",
   }).show(p);
 

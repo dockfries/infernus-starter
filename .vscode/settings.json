@@ -4,7 +4,10 @@
   "i18n-ally.keystyle": "nested",
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
-    "source.fixAll.eslint": "explicit",
+    "source.format.oxc": "always",
+    "source.fixAll.oxc": "always",
     "source.organizeImports": "never"
-  }
+  },
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": false
 }

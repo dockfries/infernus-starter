@@ -14,18 +14,9 @@ PlayerEvent.onConnect(async ({ player, next }) => {
     ColorEnum.Warn,
     $t("player.version", [player.getVersion().version], player.locale),
   );
-  player.sendClientMessage(
-    ColorEnum.White,
-    $t("player.ip", [player.getIp().ip], player.locale),
-  );
-  player.sendClientMessage(
-    ColorEnum.White,
-    $t("player.ping", [player.getPing()], player.locale),
-  );
-  player.sendClientMessage(
-    ColorEnum.White,
-    $t("player.rawIp", [player.getRawIp()], player.locale),
-  );
+  player.sendClientMessage(ColorEnum.White, $t("player.ip", [player.getIp().ip], player.locale));
+  player.sendClientMessage(ColorEnum.White, $t("player.ping", [player.getPing()], player.locale));
+  player.sendClientMessage(ColorEnum.White, $t("player.rawIp", [player.getRawIp()], player.locale));
   return next();
 });
 
@@ -66,9 +57,7 @@ PlayerEvent.onKeyStateChange(({ player, newKeys, oldKeys, next }) => {
 });
 
 PlayerEvent.onPause(({ player, pausedAt, next }) => {
-  logger.info(
-    $t("player.pause", [player.getName().name, pausedAt], player.locale),
-  );
+  logger.info($t("player.pause", [player.getName().name, pausedAt], player.locale));
   return next();
 });
 

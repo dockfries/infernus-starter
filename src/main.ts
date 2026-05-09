@@ -1,12 +1,7 @@
 import { logger } from "./logger";
 
 import { GameMode } from "@infernus/core";
-import {
-  onIncomingPacket,
-  onIncomingRPC,
-  onOutgoingPacket,
-  onOutgoingRPC,
-} from "@infernus/raknet";
+import { onIncomingPacket, onIncomingRPC, onOutgoingPacket, onOutgoingRPC } from "@infernus/raknet";
 import "./commands";
 import { $t } from "./i18n";
 import { cone } from "./controller/pickup";

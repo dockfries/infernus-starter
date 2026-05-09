@@ -24,8 +24,9 @@
     "dev:watch": "vite build -m development",
     "dev:server": "nodemon -x \"pnpm exec ./omp-server\" -I -w dist/bundle.js",
     "build": "cross-env NODE_ENV=production vite build",
-    "format-all": "prettier \"src/**/*.ts\" --write",
-    "lint-all": "eslint \"src/**/*.ts\" --fix",
+    "format": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -34,29 +35,25 @@
     "winston": "^3.19.0"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@infernus/types": "^0.1.0",
     "@types/node": "^25.6.2",
     "cross-env": "^10.1.0",
-    "eslint": "^10.3.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.2",
     "node-gyp": "^12.3.0",
     "nodemon": "^3.1.14",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.8.3",
+    "oxfmt": "^0.48.0",
+    "oxlint": "^1.63.0",
+    "oxlint-tsgolint": "^0.22.1",
     "source-map-support": "^0.5.21",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.2",
     "vite": "^8.0.11"
   },
   "lint-staged": {
-    "*.{ts,json,js}": [
-      "eslint --fix"
-    ]
+    "*.{ts,js,json}": "pnpm run lint",
+    "*.{ts,js,json,yml}": "pnpm run format"
   },
   "engines": {
     "node": ">=22.0.0"
