@@ -1,4 +1,4 @@
-import { DialogException, DisconnectException } from "@infernus/core";
+import { DialogException } from "@infernus/core";
 import process from "node:process";
 import winston from "winston";
 
@@ -38,7 +38,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 process.on("uncaughtException", (err) => {
-  const ignoreExceptions = [DialogException, DisconnectException];
+  const ignoreExceptions = [DialogException];
   if (ignoreExceptions.some((e) => err instanceof e)) {
     return;
   }
