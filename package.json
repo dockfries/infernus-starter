@@ -52,7 +52,7 @@
     "vite": "^8.0.14"
   },
   "lint-staged": {
-    "*.{ts,js,json}": "pnpm run lint",
+    "*.{ts,js}": "pnpm run lint",
     "*.{ts,js,json,yml}": "pnpm run format"
   },
   "engines": {
