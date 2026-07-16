@@ -8,13 +8,13 @@
       "version": "2.6.1",
       "component": false
     },
-    "samp-incognito/samp-streamer-plugin": {
+    "dockfries/Pawn.RakNet": {
+      "version": "1.6.1-omp-rc1",
+      "component": true
+    },
+    "dockfries/samp-streamer-plugin": {
       "version": "v2.9.6",
       "component": false
-    },
-    "katursis/Pawn.RakNet": {
-      "version": "1.6.0-omp",
-      "component": true
     }
   }
 }
