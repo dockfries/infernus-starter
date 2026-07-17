@@ -20,7 +20,6 @@ export default defineConfig(({ mode }) => {
         : null,
       rolldownOptions: {
         output: {
-          banner: isDev ? `import "source-map-support/register.js"` : "",
           minify: !isDev,
           cleanDir: !isDev,
           dir: "dist",
