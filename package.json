@@ -31,21 +31,21 @@
   },
   "dependencies": {
     "@infernus/core": "^0.14.7",
-    "@infernus/raknet": "^0.14.1",
+    "@infernus/raknet": "^0.14.2",
     "winston": "^3.19.0"
   },
   "devDependencies": {
     "@infernus/types": "^0.1.1",
     "@types/node": "^26.1.2",
     "cross-env": "^10.1.0",
-    "globals": "^17.8.0",
+    "globals": "^17.9.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.3.0",
     "node-gyp": "^13.0.1",
     "nodemon": "^3.1.14",
     "npm-run-all2": "^9.0.3",
-    "oxfmt": "^0.61.0",
-    "oxlint": "^1.76.0",
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^6.0.3",
     "vite": "^8.2.0"
