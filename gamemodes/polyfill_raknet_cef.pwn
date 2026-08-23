@@ -6,7 +6,6 @@
 #include <streamer>
 
 #include <Pawn.RakNet>
-#include <polyfill/raknet>
 
 #include <cef>
 #include <polyfill/cef>
