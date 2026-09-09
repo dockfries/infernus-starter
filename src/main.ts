@@ -1,3 +1,4 @@
+import "./polyfill/stdin";
 import { logger } from "./logger";
 
 import { GameMode } from "@infernus/core";
