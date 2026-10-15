@@ -1,7 +1,8 @@
 {
+  "$schema": "https://raw.githubusercontent.com/dockfries/infernus/main/packages/cli/schemas/infernus.schema.json",
   "dependencies": {
-    "dockfries/samp-node": "^2.6.1",
-    "openmultiplayer/open.mp": "^1.5.8",
-    "dockfries/samp-streamer-plugin": "^2.9.6"
+    "dockfries/samp-node": "2.6.1",
+    "dockfries/samp-streamer-plugin": "^2.9.6",
+    "openmultiplayer/open.mp": "^1.6.7"
   }
 }

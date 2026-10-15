@@ -19,7 +19,8 @@ export npm_config_target_arch=ia32
 # set npm_config_arch=ia32
 # set npm_config_target_arch=ia32
 
-pnpm dlx @infernus/create-app@latest install
+pnpm add @infernus/cli@latest -g
+infernus install
 
 pnpm install --dev # ensure node-gyp install first
 
