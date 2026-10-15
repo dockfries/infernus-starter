@@ -1,8 +1,10 @@
 {
+  "$schema": "https://raw.githubusercontent.com/dockfries/infernus/main/packages/cli/schemas/infernus.schema.json",
   "lockfileVersion": 1,
   "dependencies": {
     "openmultiplayer/open.mp": {
-      "version": "v1.5.8.3079"
+      "version": "v1.6.7.3218",
+      "component": false
     },
     "dockfries/samp-node": {
       "version": "2.6.1",
