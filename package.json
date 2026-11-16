@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@infernus/core": "^0.15.1",
+    "@infernus/core": "^0.15.2",
     "winston": "^3.19.0"
   },
   "devDependencies": {
@@ -39,15 +39,15 @@
     "cross-env": "^10.1.0",
     "globals": "^17.14.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.6.0",
+    "lint-staged": "^17.6.1",
     "node-gyp": "^13.1.0",
     "nodemon": "^3.1.14",
     "npm-run-all2": "^9.0.4",
-    "oxfmt": "^0.76.0",
-    "oxlint": "^1.91.0",
-    "oxlint-tsgolint": "^7.0.2005",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "oxlint-tsgolint": "^7.0.2007",
     "typescript": "^6.0.3",
-    "vite": "^8.3.5"
+    "vite": "^8.3.8"
   },
   "lint-staged": {
     "*.{ts,js}": "pnpm run lint",
